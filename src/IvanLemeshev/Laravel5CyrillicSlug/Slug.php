@@ -4,7 +4,7 @@ class Slug
 {
     /**
      * Generate a URL friendly "slug" from a given Cyrillic string.
-     * Supports: Russian, Kazakh, Ukrainian.
+     * Supports: Russian, Kazakh, Ukrainian, Bulgarian.
      *
      * @param string $title
      * @param string $separator
@@ -15,7 +15,7 @@ class Slug
         $matrix = [
             'й' => 'i',    'ц' => 'c',  'у' => 'u',  'к' => 'k',    'е' => 'e',
             'н' => 'n',    'г' => 'g',  'ш' => 'sh', 'щ' => 'shch', 'з' => 'z',
-            'х' => 'h',    'ъ' => '',   'ф' => 'f',  'ы' => 'y',    'в' => 'v',
+            'х' => 'h',    'ъ' => 'y',   'ф' => 'f',  'ы' => 'y',    'в' => 'v',
             'а' => 'a',    'п' => 'p',  'р' => 'r',  'о' => 'o',    'л' => 'l',
             'д' => 'd',    'ж' => 'zh', 'э' => 'e',  'ё' => 'e',    'я' => 'ya',
             'ч' => 'ch',   'с' => 's',  'м' => 'm',  'и' => 'i',    'т' => 't',
